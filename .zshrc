@@ -131,4 +131,4 @@ export COMPOSER_MEMORY_LIMIT=-1
 #trap prod_command_trap DEBUG
 
 # Add homebrew and python3 to path
-export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
+# export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
