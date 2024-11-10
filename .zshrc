@@ -15,8 +15,11 @@ unsetopt nomatch
 # Nicer prompt.
 export PS1=$'\n'"%F{green} %*%F %3~ %F{white}"$'\n'"$ "
 
+# ASDF CONFIG
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 # Enable plugins.
-plugins=(git brew history kubectl history-substring-search)
+plugins=(git brew history kubectl history-substring-search asdf)
 
 # Custom $PATH with extra locations.
 export PATH=$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:/usr/local/bin:/usr/local/sbin:$HOME/bin:$HOME/go/bin:$HOME/.cargo/bin:/usr/local/git/bin:$HOME/.composer/vendor/bin:$PATH
@@ -126,3 +129,6 @@ export COMPOSER_MEMORY_LIMIT=-1
 #}
 #shopt -s extdebug
 #trap prod_command_trap DEBUG
+
+# Add homebrew and python3 to path
+export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH
